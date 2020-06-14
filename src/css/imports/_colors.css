@@ -8,6 +8,10 @@
   color: var(--highlight);
 }
 
+.dim {
+  color: var(--dim);
+}
+
 .white {
   color: var(--white);
 }
@@ -36,12 +40,24 @@
   color: var(--black);
 }
 
+.brownish {
+  color: var(--brownish);
+}
+
+.brown {
+  color: var(--brown);
+}
+
 .bg-primary {
   background-color: var(--primary);
 }
 
 .bg-highlight {
   background-color: var(--highlight);
+}
+
+.bg-dim {
+  background-color: var(--dim);
 }
 
 .bg-white {
@@ -72,8 +88,17 @@
   background-color: var(--black);
 }
 
+.bg-brownish {
+  background-color: var(--brownish);
+}
+
+.bg-brown {
+  background-color: var(--brown);
+}
+
 .bg-fix-primary {
   padding: 0 var(--spacing-small);
+
   & :first-child {
     box-shadow: var(--spacing-small) 0 0 var(--primary), -var(--spacing-small) 0 0 var(--primary);
   }

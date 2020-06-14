@@ -1,6 +1,6 @@
 ---
-title: Our Coffee
-type: products
+title: Schwerpunkte
+type: static
 image: /img/products-jumbotron.jpg
 heading: What we offer
 description: >-

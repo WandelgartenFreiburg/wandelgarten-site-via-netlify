@@ -1,5 +1,7 @@
 html {
   font-size: var(--font-size);
+  color: var(--black);
+
   @media (--breakpoint-medium) {
     font-size: var(--font-size-m);
   }

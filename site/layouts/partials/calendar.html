@@ -1,10 +1,10 @@
 <div class="bg-off-white pv4">
 	<div class="ph3 mw7 center">
 
-		<h2 class="f2 b lh-title mb3">Aktuelles aus dem Garten</h2>
+		<h2 class="f2 b lh-title mb3">Termine</h2>
 
 		<div class="w-100 flex-ns mhn1-ns flex-wrap mb3">
-			{{ range first 4 (where .Data.Pages "Type" "post") }}
+			{{ range first 4 (where .Data.Pages "Type" "termine") }}
 				<div class="ph1-ns w-50-ns flex">
 					{{ .Render "li" }}
 				</div>
@@ -12,7 +12,7 @@
 		</div>
 
 		<div class="tc">
-			<a href="/aktuelles" class="btn raise">Weitere Beiträge</a>
+			<a href="/termine" class="btn raise">Weitere Termine</a>
 		</div>
 
 	</div>

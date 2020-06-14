@@ -1,0 +1,12 @@
+<div class="bg-off-white pv4">
+	<div class="ph3 mw7 center">
+		<div class="flex-ns flex-wrap mhn2-ns mb3">
+			{{ range .teasers }}
+				<a href="{{ .link }}" class="ph2-ns w-33-ns mb4" title="{{ .title }}">
+					<img src="{{ .image }}" alt="" class="center db mb3" style="width: 240px">
+					<p>{{ .title }}</p>
+				</a>
+			{{ end }}
+		</div>
+	</div>
+</div>
