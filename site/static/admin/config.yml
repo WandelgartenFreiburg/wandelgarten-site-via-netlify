@@ -86,6 +86,7 @@ collections: # A list of collections the CMS should be able to edit
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Image, name: image, widget: image}
+          - {label: Headline, name: heading, widget: string}
           - label: Values
             name: values
             widget: list
@@ -93,3 +94,32 @@ collections: # A list of collections the CMS should be able to edit
               - {label: Heading, name: heading, widget: string}
               - {label: Text, name: text, widget: text}
               - {label: Image, name: imageUrl, widget: image}
+      - file: "site/content/wandelgarten/ueber-uns.md"
+        label: "Über uns Seite"
+        name: "ueber-uns"
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Headline, name: heading, widget: string}
+          - {label: Beschreibung, name: description, widget: markdown}
+          - label: Inhalt
+            name: main
+            widget: object
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Image, name: imageUrl, widget: image}
+              - {label: Text, name: text, widget: markdown}
+          - label: Abschnitte
+            name: sections
+            widget: list
+            fields:
+              - {label: Heading, name: heading, widget: string}
+              - {label: Image, name: imageUrl, widget: image}
+              - {label: Text, name: text, widget: markdown}
+              - label: Elemente
+                name: children
+                widget: list
+                fields:
+                  - {label: Heading, name: heading, widget: string}
+                  - {label: Image, name: imageUrl, widget: image}
+                  - {label: Text, name: text, widget: markdown}
